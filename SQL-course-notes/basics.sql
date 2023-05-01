@@ -21,7 +21,42 @@
 
 --          SELECT allows you to read data and display it. This is called a query. Commonly used. It indicates which column(s) you want to be given the data for.
 --          FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
+--		   	LIMIT  is useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
+--		   	ORDER BY allows us to sort our results using the data in any column.  always comes in a query after the SELECT and FROM statements, but before the LIMIT statement.
+--		   	DESC after ORDER BY shows in descendent order. Its opitional.
+--		   	WHERE command as filtering the data. we can display subsets of tables based on conditions that must be met. It's used with symbols: <, >, >=, <=, =, !=.
 
 --          VARCHAR data type is very commonly used for storing strings.
 --          NUMERIC data type is commonly used for mathematical operations.
 --          INT data type is commonly used for storing numerical values.
+
+	--Examples: Without [], columns are separate by comma
+				SELECT [column or columns or *] FROM [table];
+				SELECT [column or columns or *] FROM [table] LIMIT [number of rows];
+				SELECT [column or columns or *] FROM [table] ORDER BY [column or columns] DESC(optional);
+				SELECT [column or columns or *] FROM [table] ORDER BY [column or columns] DESC(optional), [column];
+				SELECT [column or columns or *] FROM [table] WHERE [conditional];
+
+--Arithmetic (and others) Operators: Not writable. Use parenthesis, recommended.
+--			Creating a new column that is a combination of existing columns is known as a derived column. You can use *, /, +, -.
+--			AS gives a name, or "alias" to your new column.
+--			LIKE operator is extremely useful for working with text. The % tells us that we might want any number of characters leading up to a particular set of characters or following a certain set of characters.
+--			IN operator works to find specific values from a specific column.
+--			NOT operator is an extremely useful operator for working with the previous two operators we introduced: IN and LIKE. By specifying NOT LIKE or NOT IN, we can grab all of the rows that do not meet a particular criteria.
+--			AND operator is used within a WHERE statement to consider more than one logical clause at a time.
+--			BETWEEN is used with the word and with the symbols: >=, <=. See the example.
+--			OR operator can combine multiple statements. It's a logical operator that allows you to select rows that satisfy either of two conditions.
+
+	--Exmaples: Without [], columns are separate by comma
+				SELECT [column][arithmetic operator][column or number] FROM [table];
+				SELECT [column or columns or *] FROM [table] WHERE [column] LIKE '%[particular number or character]%';
+				SELECT [column or columns or *] FROM [table] WHERE [column] LIKE '[character starts with]%';
+				SELECT [column or columns or *] FROM [table] WHERE [column] LIKE '%[character finishes with]';
+				SELECT [column or columns or *] FROM [table] WHERE [column] IN [(value, value,...)];
+				SELECT [column or columns or *] FROM [table] WHERE [column] NOT LIKE '%[particular number or character]%';
+				SELECT [column or columns or *] FROM [table] WHERE [column] NOT IN [(value, value,...)];
+				SELECT [column or columns or *] FROM [table] WHERE [column] >= [value] AND [column] <= [value];
+				SELECT [column or columns or *] FROM [table] WHERE [column] BETWEEN [value] AND [value];
+				SELECT [column or columns or *] FROM [table] WHERE [column] NOT LIKE '%[particular number or character]%' AND [column] LIKE '%[particular number or character]%';
+				SELECT [column or columns or *] FROM [table] WHERE [conditional] OR [conditional]
+--------------------------------------------------------------------------------------------------------------------------------------
