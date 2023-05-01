@@ -21,10 +21,10 @@
 
 --          SELECT allows you to read data and display it. This is called a query. Commonly used. It indicates which column(s) you want to be given the data for.
 --          FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
---		   	LIMIT  is useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
---		   	ORDER BY allows us to sort our results using the data in any column.  always comes in a query after the SELECT and FROM statements, but before the LIMIT statement.
---		   	DESC after ORDER BY shows in descendent order. Its opitional.
---		   	WHERE command as filtering the data. we can display subsets of tables based on conditions that must be met. It's used with symbols: <, >, >=, <=, =, !=.
+--	    LIMIT  is useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
+--	    ORDER BY allows us to sort our results using the data in any column.  always comes in a query after the SELECT and FROM statements, but before the LIMIT statement.
+--	    DESC after ORDER BY shows in descendent order. Its opitional.
+--	    WHERE command as filtering the data. we can display subsets of tables based on conditions that must be met. It's used with symbols: <, >, >=, <=, =, !=.
 
 --          VARCHAR data type is very commonly used for storing strings.
 --          NUMERIC data type is commonly used for mathematical operations.
