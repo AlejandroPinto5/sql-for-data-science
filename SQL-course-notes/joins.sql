@@ -10,6 +10,8 @@
     --JOIN statements is to allow us to pull data from more than one table at a time. You will need to know how to specify tables and columns in the SELECT statement:
     --ON statement to specify a JOIN condition which is a logical statement to combine the table. It is a link for our PK to equal the FK.
     --ALIAS is for reduce typing. See the example.
+    --LEFT and RIGTH statements pulls all the same rows. It works with JOIN. LEFT JOIN and RIGTH JOIN do the same thing if we change the tables that are in the FROM and JOIN statements.
+    
     
         --Examples:
           SELECT [talbe].[column or columns or *] FROM [table1] JOIN [table2] ON [table1].[column_id] = [table2].[column_id];
