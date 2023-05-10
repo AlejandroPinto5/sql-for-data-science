@@ -17,3 +17,4 @@
           SELECT [talbe].[column or columns or *] FROM [table1] JOIN [table2] ON [table1].[column_id] = [table2].[column_id];
           SELECT [talbe].[column or columns or *] FROM [table1] JOIN [table2] ON [table1].[column_id] = [table2].[column_id] JOIN [table3] ON [table1].[column] = [table3].[column];
           SELECT [t].[column or columns or *] FROM [table] [t]
+---------------------------------------------------------------------------------------------------------
