@@ -11,6 +11,7 @@
     --HAVING is the “clean” way to filter a query that has been aggregated, but this is also commonly done using a subquery. Any time you want to perform a WHERE on an element of your query that was created by an aggregate, you need to use HAVING instead.
     --DATE_TRUNC allows you to truncate your date to a particular part of your date-time column. Common trunctions are day, month, and year. 
     --DATE_PART can be useful for pulling a specific portion of a date, but notice pulling month or day of the week (dow) means that you are no longer keeping the years in order.
+    --DATE_PART can be useful for pulling a specific portion of a date, but notice pulling month or day of the week (dow) means that you are no longer keeping the years in order.
     --CASE WHEN ELSE END statement always goes in the SELECT clause.
     
 --Examples: Without []
