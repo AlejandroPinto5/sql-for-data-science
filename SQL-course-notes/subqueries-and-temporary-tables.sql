@@ -5,3 +5,4 @@
 
   --Examples: Without []
     SELECT [column or columns or * or aggregations] FROM ([query]) [alias];
+    SELECT [column or columns or * or aggregations] FROM ([query]) [alias1] JOIN ([query]) [alias2] ON [alias_id1] = [alias_id2];
