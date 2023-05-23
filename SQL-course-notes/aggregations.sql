@@ -24,6 +24,6 @@
     SELECT [column or columns or *], SUM([column or columns or *]) AS [alias], ... FROM [table] GROUP BY [column or columns]; 
     SELECT DISTINCT [column or columns or *] FROM table;
     SELECT [column or columns or *], SUM([column or columns *]) FROM [table] GROUP BY [column] HAVING SUM([column or columns or *]) [condicional]
-    SELECT DATE_TRUNC('day', [column datetime data type]) AS [alias], ... FROM [table] GROUP BY DATE_TRUNC('day, [column datetime data type]) ORDER BY DATE_TRUNC('day, [column datetime data type])
+    SELECT DATE_TRUNC('day', [column datetime data type]) AS [alias], ... FROM [table] GROUP BY DATE_TRUNC('day', [column datetime data type]) ORDER BY DATE_TRUNC('day, [column datetime data type])
     SELECT [column or oclumns or *] CASE [conditional or conditionals] END AS [alias] FROM [table]
 -----------------------------------------------------------------------------------------------
